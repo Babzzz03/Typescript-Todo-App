@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import './App.css';
 import InputField from './component/InputField';
+import TodoList from './component/TodoList';
 import { Todo } from './model';
 
 const App: React.FC = () => {
@@ -22,6 +23,7 @@ if(todo){
     <div className="App">
       <span className="heading">Taskify</span>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
+      <TodoList />
     </div>
   );
 }
